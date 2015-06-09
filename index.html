@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <link rel="stylesheet" href="css/w-table.css">
+    <script type="text/javascript" src="js/w-table.js"></script>
+</head>
+<body>
+
+<form class="w-table">
+    <div class="w-table__row w-table__head clearfix">
+        <div class="w-table__cell w-table__name w-table__btn w-table__btn_name overflow">Name</div>
+        <div class="w-table__cell w-table__size w-table__btn w-table__btn_size overflow">Size</div>
+        <div class="w-table__cell w-table__date w-table__btn w-table__btn_date overflow">Date Modified</div>
+    </div>
+    <div class="w-table__files">
+        <div class="w-table__row w-table__file clearfix" draggable="true">
+            <div class="w-table__cell w-table__name overflow">{{name}}</div>
+            <div class="w-table__cell w-table__size overflow">{{size}}</div>
+            <div class="w-table__cell w-table__date overflow">{{lastModifiedDate}}</div>
+        </div>
+    </div>
+    <div class="w-table__row w-table__add clearfix">
+        <input class="w-table__input" type="file">
+    </div>
+</form>
+
+<br>
+<br>
+
+<form class="w-table">
+    <div class="w-table__row w-table__head clearfix">
+        <div class="w-table__cell w-table__name w-table__btn w-table__btn_name overflow">Name</div>
+        <div class="w-table__cell w-table__size w-table__btn w-table__btn_size overflow">Size</div>
+        <div class="w-table__cell w-table__date w-table__btn w-table__btn_date overflow">Date Modified</div>
+    </div>
+    <div class="w-table__files">
+        <div class="w-table__row w-table__file clearfix" draggable="true">
+            <div class="w-table__cell w-table__name overflow">{{name}}</div>
+            <div class="w-table__cell w-table__size overflow">{{size}}</div>
+            <div class="w-table__cell w-table__date overflow">{{lastModifiedDate}}</div>
+        </div>
+    </div>
+    <div class="w-table__row w-table__add clearfix">
+        <input class="w-table__input" type="file">
+    </div>
+</form>
+
+</body>
+</html>

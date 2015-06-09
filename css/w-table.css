@@ -1,0 +1,80 @@
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.w-table {
+    position: relative;
+    width: 600px;
+}
+
+.w-table__drag_over {
+    background-color: rgb(210, 242, 203);
+}
+
+.w-table__row {
+    height: 30px;
+    border-bottom: 1px dotted;
+}
+
+.w-table__row:last-child {
+    border-bottom: 0;
+}
+
+.w-table__row:hover .w-table__cell {
+    background-color: antiquewhite;
+}
+
+.w-table__head:first-child:hover .w-table__cell{
+    background-color: transparent;
+}
+
+.w-table__file {
+    cursor: move;
+}
+
+.w-table__add .w-table__cell{
+    display: none;
+}
+
+.w-table__add .w-table__input{
+    display: block;
+}
+
+.w-table__cell {
+    /*cursor: pointer;*/
+    margin-right: 1px;
+    float: left;
+    padding: 0 8px;
+    line-height: 30px;
+}
+
+.w-table__name, .w-table__size, .w-table__date {
+    width: 183px;
+}
+
+.w-table__input {
+    display: none;
+    margin: 8px 0 0 8px;
+}
+
+.w-table__btn {}
+
+.w-table__btn:hover {
+    background-color: antiquewhite !important;
+}
